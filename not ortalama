@@ -1,0 +1,41 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class notOrtalama {
+
+    public static void main(String[] args) {
+
+        int Matematik, Fizik, Kimya, Biyoloji, Tarih, Geometri;
+
+        Scanner dn = new Scanner(System.in);
+
+        System.out.print("Matematik Notunu Giriniz :");
+        Matematik = dn.nextInt();
+
+        System.out.print("Fizik Notunu Giriniz :");
+        Fizik = dn.nextInt();
+
+        System.out.print("Kimya Notunu Giriniz :");
+        Kimya = dn.nextInt();
+
+        System.out.print("Biyoloji Notunu Giriniz :");
+        Biyoloji = dn.nextInt();
+
+        System.out.print("Tarih Notunu Giriniz :");
+        Tarih = dn.nextInt();
+
+        System.out.print("Geometri Notunu Giriniz :");
+        Geometri = dn.nextInt();
+
+        int toplam = Matematik + Fizik + Kimya + Biyoloji + Tarih + Geometri;
+        double sonuc = toplam / 6;
+
+        System.out.print("Ortalama :"+sonuc);
+
+        boolean kosul = sonuc>=70;
+        String gectiMi = kosul ? "Geçti" : "Kaldı";
+
+        System.out.print(gectiMi);
+    }
+}
